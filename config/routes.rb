@@ -5,5 +5,12 @@ Rails.application.routes.draw do
     resources :products
   end
 
-  root 'welcome#index'
+  root 'products#index'
+  devise_for :users
+  namespace :admin do
+    resources :products
+  end
+
+  resources :products
+  
 end
