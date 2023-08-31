@@ -13,4 +13,5 @@ devise_for :users
     end
   end
 
+  resources :carts
 end
