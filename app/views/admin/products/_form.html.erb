@@ -3,7 +3,8 @@
   <%= f.input :description %>
   <%= f.input :quantity %>
   <%= f.input :price %>
-  <%= f.input :category, :collection => ["kirby", "monster_hunter", "super_smash_bros", "super_mario", "splatoon", "zelda_botw", "animal_crossing"], :selected => "kirby" %>
+  <%= f.input :series, :collection => ["星之卡比", "Monster Hunter", "任天堂明星大亂鬥", "超級瑪利歐", "斯普拉遁", "薩耳達傳說 曠野之息", "動物森友會"], :selected => "星之卡比
+  " %>
 
   <% if @product.image.present? %>
     <span>目前商品圖</span> <br>
