@@ -19,6 +19,16 @@ devise_for :users
     member do
       post :add_to_cart
     end
+
+    collection do
+      get :kirby
+      get :monster_hunter
+      get :super_smash_bros
+      get :super_mario
+      get :splatoon
+      get :zelda_botw
+      get :animal_crossing
+    end
   end
 
   resources :carts do

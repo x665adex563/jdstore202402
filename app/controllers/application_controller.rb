@@ -1,5 +1,10 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+  before_action :set_ransack_obj
+
+  def set_ransack_obj
+    @q = Product.ransack(params[:q])
+  end
 
   def admin_required
     if !current_user.admin?

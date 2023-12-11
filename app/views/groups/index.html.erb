@@ -1,0 +1,6 @@
+<div>
+    <%= form_tag groups_path, id: "search-form", :method => "get" do %>
+    <%= text_field_tag :search, params[:search], class: 'btn btn-default', placeholder: "Search Books" %>
+    <%= submit_tag "Search", class: 'btn btn-default', name: nil %>
+    <% end %>
+</div>
