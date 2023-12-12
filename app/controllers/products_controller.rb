@@ -32,6 +32,8 @@ class ProductsController < ApplicationController
     @products = Product.recent.all
   end
 
+
+
   def kirby
     @products = case params[:order]
               when 'by_higher_price'
