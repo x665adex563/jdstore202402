@@ -1,1 +1,23 @@
+<div class="container-fluid jobs-show-page">
+  <div class="col-md-10 col-md-offset-1 col-lg-9 col-lg-offset-2">
+    <div class="dropdown clearfix pull-right"><br>
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="true">Filter
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuDevider">
+        <li>
+          <%= link_to("降序排列", splatoon_products_path(:order => "by_higher_price")) %>
+        </li>
+        <li>
+          <%= link_to("升序排列", splatoon_products_path(:order => "by_lower_price")) %>
+        </li>
+        <li>
+          <%= link_to("照日期排列", splatoon_products_path) %>
+       </li>
+      </ul>
+    </div><br>
+  </div>
+</div>
+
 <%= render "products_item" %>
