@@ -21,6 +21,8 @@
 
 
  /** 登入彈窗 格式 **/
+ /** 登入彈窗 格式 **/
+ /** 登入彈窗 格式 **/
  .loginmodal-container {
    padding: 30px;
    max-width: 350px;
@@ -118,6 +120,8 @@
 
 
 // footer icon css
+// footer icon css
+// footer icon css
 
 //讓四個 社群圖標 直排
   ul.social-network {
@@ -197,43 +201,8 @@
   }
 
 
-  //landing page 最上方大圖
-.jumbotron {
-  background: asset-data-url("123.jpeg") no-repeat center center;
-  background-size: cover;
-  padding-bottom: 150px;
-}
-
-.title {
-    background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-    max-width: 500px;//最大宽度
-    margin-top: 200px;//和顶部拉开距离
-    margin-bottom: 0;//这样就可以紧接息面的描述文字
-    border-top-right-radius: 3px;//右上角圆边
-    border-top-left-radius: 3px;//左上角圆边
-  }
-
-   .jumbotron h1, .jumbotron .h1 {
-       text-align: left;//文字左对齐
-       color: #222;  //字体颜色
-
-       padding: 50px 20px 0;//上50px，左右20px，下0
-   }
-
-   .jumbotron p {
-       margin: 0;//上下左右margin为0
-       font-size: 26px;//字体大小
-       max-width: 500px;//最大宽度
-       background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-       padding: 20px;//上下左右padding为20px
-       text-align:left;//文字左对齐
-       color: #212121;//字体颜色
-
-       border-bottom-right-radius: 3px;//右下角圆边
-       border-bottom-left-radius: 3px;//左下角圆边
-   }
-
-
+   //改變網頁背景顏色
+   //改變網頁背景顏色
    //改變網頁背景顏色
    body {
      font-family: 'Open sans', sans-serif;
@@ -241,4 +210,32 @@
      background-image: linear-gradient(#B3E5FC, #fff6e4);
      margin-top: 80px;
      margin-bottom: 150px;
+   }
+
+//調整youtube影片尺寸
+//調整youtube影片尺寸
+//調整youtube影片尺寸
+   .flex-video {
+     position: relative;
+     padding-top: 25px;
+     padding-bottom: 67.5%;
+     height: 0;
+     margin-bottom: 16px;
+     overflow: hidden;
+   }
+
+   .flex-video.widescreen { padding-bottom: 57.25%; }
+   .flex-video.vimeo { padding-top: 0; }
+
+   .flex-video iframe,
+   .flex-video object,
+   .flex-video embed {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 40%; //調整影片比例
+     height: 40%;
+   }
+   @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+     .flex-video { padding-top: 0; }
    }
