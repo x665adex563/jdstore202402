@@ -118,9 +118,9 @@
 
 
 
-// footer icon css
-// footer icon css
-// footer icon css
+// icon css
+// icon css
+// icon css
 
 //讓四個 社群圖標 直排
   ul.social-network {
@@ -200,16 +200,7 @@
   }
 
 
-   //改變網頁背景顏色
-   //改變網頁背景顏色
-   //改變網頁背景顏色
-   body {
-     font-family: 'Open sans', sans-serif;
-     font-weight: 300px;
-     background-image: linear-gradient(#B3E5FC, #fff6e4);
-     margin-top: 80px;
-     margin-bottom: 150px;
-   }
+
 
 //調整youtube影片尺寸
 //調整youtube影片尺寸
@@ -244,7 +235,6 @@
    // }
 
 
-
 //首頁排版
 //首頁排版
 //首頁排版
@@ -256,10 +246,10 @@ html {
 }
 
 body {
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Open sans', sans-serif; //文字樣式選擇(包山包海)
   font-weight: 300;
-  background-image: linear-gradient(#8b9da9, #fff6e4);
-  /*box-shadow: inset 0 0 100px hsla(0,0%,0%,.3); */
+  background-image: linear-gradient(#B0BEC5, #fff6e4);
+  margin-top: 80px;
   margin-bottom: 150px;
 }
 
@@ -268,9 +258,9 @@ body {
   margin-bottom: 0;
 }
 
-.navbar a,
+.navbar a, // a是超連結
 .sec-about p {
-  text-align: center;
+  text-align: center; //文字置中 (center,left,right,justify(左右對齊),inherit,initial)
 }
 
 .navbar a {
@@ -281,8 +271,9 @@ body {
   font-size: 10px;
 }
 
+//navbar下拉式選單
 .dropdown-menu {
-	min-width: 260px;
+	min-width: 210px;
 }
 
 .dropdown-menu li a {
@@ -290,8 +281,8 @@ body {
 	font-weight: 300;
 }
 
-.dropdown-menu li a:hover {
-	color: darken(#fff, 5%);
+.dropdown-menu li a:hover { //滑鼠指著時 文字顏色
+	color: darken(#B71C1C, 5%); //變暗,顏色,透明度
 }
 
 div.alert {
@@ -301,15 +292,14 @@ div.alert {
 }
 
 .sec-main {
-  margin-top: -5px;
+  margin-top: -28px; //下方內容 跟頁首距離
 }
 
 .main-heading {
   font-family: 'Open sans', sans-serif;
-  font-weight: 300;
+  font-weight: 300; //字體粗細1~1000
   text-align: center;
-  letter-spacing: 9px;
-  text-transform: uppercase;
+  letter-spacing: 9px; //每個文字的間隔距離
 }
 
 .container > h1 {
@@ -324,7 +314,7 @@ p {
 }
 
 .sec-about a {
-  text-decoration: underline;
+  text-decoration: underline; //一條橫線
 }
 
 .sec-services h2,
@@ -334,7 +324,7 @@ p {
 }
 
 .sec-testimonials p {
-  font-style: italic;
+  font-style: italic; //斜體字 (normal,italic(文字斜體),oblique(文本傾斜))
 }
 
 .sec-contact .btn {
@@ -367,10 +357,9 @@ p {
 //主要內容
 .sec-main {
   position: relative;
-  height: 560px;
-  /*background: url(https://source.unsplash.com/kVf7VRgg4p8/1920x1080) no-repeat center center; */
-  background: asset-data-url("123.jpeg") no-repeat center center;
-  background-size: cover;
+  height: 200px;
+  background: asset-data-url("首頁至頂大圖.jpeg") no-repeat center center;
+  background-size: cover; //圖片覆蓋整個區域
 
   &:after {
     content: "";
@@ -379,7 +368,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.05); //前三調整顏色，第四個調整透明度
   }
 }
 
@@ -393,10 +382,10 @@ p {
   padding: 0;
   margin: auto;
   height: 40px;
-  color: #fff;
+  color: #9E9E9E;
 }
 
-//關於 About
+//關於"公仔專賣店"
 .sec-about a {
   color: #000;
   &:hover,
@@ -405,7 +394,7 @@ p {
   }
 }
 
-//服務 Services
+//功能
 .sec-services {
   background: #f9f9f9;
 }
@@ -428,12 +417,12 @@ p {
   margin: 1em 0;
 }
 
-//感言 Testimonials
+//分類
 .sec-testimonials {
   background: #f9f9f9;
 }
 
-//種類 Categories
+//各界好評
 .cards-row {
   padding-top:40px;
   padding-bottom:20px;

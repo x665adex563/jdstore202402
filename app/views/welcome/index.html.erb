@@ -1,62 +1,62 @@
   <!-- 插入 youtube 連結 -->
-
-    <!-- <div class="video-container">
-      <iframe width="300" height="168" src="https://www.youtube.com/embed/dAB4zlf0COE" frameborder="0" allowfullscreen></iframe>
-    </div> -->
-    <div class="embed-responsive embed-responsive-16by9">
+    <!-- <div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dAB4zlf0COE" allowfullscreen></iframe>
-    </div>
+    </div> -->
 
+  <div class="row"> <!--讓背景左右到底-->
 
-  <!-- 施工中內容 -->
-  <section id="home" class="sec-main">
-      <h1 class="main-heading">Discover Your Best Future Here</h1>
-  </section>
+    <!-- 首頁 -->
+    <section id="home" class="sec-main">
+        <h1 class="main-heading">找到屬於你的amiibo公仔！</h1>
+    </section>
 
 
     <section id="about" class="sec-about">
       <div class="container">
-        <h1>About Us</h1>
+        <h1>關於"公仔專賣店""</h1>
 
         <hr />
 
         <div class="row">
           <div class="col-sm-6 col-sm-offset-3">
-            <p>Hi, WELCOME to OW offer. What's OW meaning? OW is one week. Our mission is helping you to find your dream work just one week. Looks like impossible?
-  						Let me tell you, come OW, everything is possible!
+            <p>希望熱愛任天堂的夥伴們人手都擁有amiibo公仔！<br>
+              不了解的人也能透過amiibo來了解任天堂遊戲的魅力！
           </div>
         </div>
       </div>
     </section>
     <section id="services" class="sec-services">
       <div class="container">
-        <h1>Why OW Offer?</h1>
+        <h1>功能</h1>
 
         <hr />
 
         <div class="row">
           <div class="col-sm-4">
-            <i class="fa fa-4x fa fa-building"></i>
+            <i class="fa fa-4x fa fa-check"></i>
 
-            <h2 class="h3">Top Tech Companies</h2>
+            <h2 class="h3">點觸以連繫各式各樣遊戲</h2>
 
-            <p>1000+ Companies registered on OW offer, just wating you coming</p>
+            <p>將amiibo點觸主機進行連動後，amiibo或許會作為角色在遊戲中登場，
+              又或是能獲取特別的道具等。1個amiibo能連繫遊戲中各式各樣的遊玩方式</p>
           </div>
 
           <div class="col-sm-4">
-            <i class="fa fa-4x fa-calendar-o"></i>
+            <i class="fa fa-4x fa fa-user-o"></i>
 
-            <h2 class="h3">Quickly Responsive</h2>
+            <h2 class="h3">角色在遊戲中登場</h2>
 
-            <p>You can receive 10-20 interview invitations within one week.</p>
+            <p>例如在《Splatoon™ 2》<br>
+            amiibo會作為「支持者」在遊戲中以你喜愛的打扮登場並提供協助，也能一起拍攝紀念照片</p>
           </div>
 
           <div class="col-sm-4">
-            <i class="fa fa-4x fa-fighter-jet"></i>
+            <i class="fa fa-4x fa fa-birthday-cake"></i>
 
-            <h2 class="h3">Higher Effective</h2>
+            <h2 class="h3">獲得角色的道具或能力</h2>
 
-            <p>One Click, one Search, you will get what you want.</p>
+            <p>例如在《薩爾達傳說 曠野之息》<br>
+              能獲得角色的道具</p>
           </div>
         </div>
       </div>
@@ -64,42 +64,42 @@
 
     <section id="categories">
   		<div class="container">
-  			<h1>Categories</h1>
+  			<h1>分類</h1>
 
         <hr />
   			<div class="row">
   				<div class="col-sm-6 col-md-3">
   			    <div class="thumbnail">
-  			      <%= image_tag("developer.png") %>
+  			      <%= image_tag("總覽.png") %>
   			      <div class="caption">
-                <h4><%= link_to("Developer", products_path(:order=> "by_developer")) %></h4>
+                <h4><%= link_to("總覽", products_path(:order => "by_recent")) %></h4>
   			      </div>
   			    </div>
   			  </div>
 
   			  <div class="col-sm-6 col-md-3">
   			    <div class="thumbnail">
-  			      <%= image_tag("customer-service.png") %>
+  			      <%= image_tag("kirby.png") %>
   			      <div class="caption">
-  			        <h4><%= link_to("Customer Service", products_path(:order => "by_customer-service")) %></h4>
+  			        <h4><%= link_to("星之卡比", kirby_products_path(:order => "by_recent")) %></h4>
   			      </div>
   			    </div>
   			  </div>
 
   			  <div class="col-sm-6 col-md-3">
   			    <div class="thumbnail">
-  			      <%= image_tag("healthcare.png") %>
+  			      <%= image_tag("monster_hunter.jpeg") %>
   			      <div class="caption">
-  			        <h4><%= link_to("Health Care", products_path(:order => "by_healthcare")) %></h4>
+  			        <h4><%= link_to("魔物獵人", monster_hunter_products_path(:order => "by_recent")) %></h4>
   			      </div>
   			    </div>
   			  </div>
 
   				<div class="col-sm-6 col-md-3">
   			    <div class="thumbnail">
-  			      <%= image_tag("sales-marketing.png") %>
+  			      <%= image_tag("super_smash_bros.png") %>
   			      <div class="caption">
-  			        <h4><%= link_to("Sales-Marketing", products_path(:order => "by_sales-marketing")) %></h4>
+  			        <h4><%= link_to("任天堂明星大亂鬥", super_smash_bros_products_path(:order => "by_recent")) %></h4>
   			      </div>
   			    </div>
   			  </div>
@@ -107,36 +107,36 @@
   			<div class="row">
   				<div class="col-sm-6 col-md-3">
   			   <div class="thumbnail">
-  			      <%= image_tag("lawyer.png") %>
+  			      <%= image_tag("super_mario.png") %>
   			      <div class="caption">
-  			        <h4><%= link_to("Legal", products_path(:order => "by_legal")) %></h4>
+  			        <h4><%= link_to("超級馬力歐", super_mario_products_path(:order => "by_recent")) %></h4>
   			      </div>
   			    </div>
   			  </div>
 
   			  <div class="col-sm-6 col-md-3">
   			    <div class="thumbnail">
-  			      <%= image_tag("non-profit.png") %>
+  			      <%= image_tag("splatoon.png") %>
   			      <div class="caption">
-  			        <h4><%= link_to("Nonprofit", products_path(:order => "by_non-profit")) %></h4>
+  			        <h4><%= link_to("斯普拉頓", splatoon_products_path(:order => "by_recent")) %></h4>
   			      </div>
   			    </div>
   			  </div>
 
   			  <div class="col-sm-6 col-md-3">
   			    <div class="thumbnail">
-  			      <%= image_tag("reunion.png") %>
+  			      <%= image_tag("zelda_botw.png") %>
   			      <div class="caption">
-  			        <h4><%= link_to("Human Resources", products_path(:order => "by_human-resource")) %></h4>
+  			        <h4><%= link_to("薩爾達傳說 曠野之息", zelda_botw_products_path(:order => "by_recent")) %></h4>
   			      </div>
   			    </div>
   			  </div>
 
   				<div class="col-sm-6 col-md-3">
   			    <div class="thumbnail">
-  			      <%= image_tag("design.png") %>
+  			      <%= image_tag("animal_crossing.png") %>
   			      <div class="caption">
-  			        <h4><%= link_to("Design", products_path(:order => "by_design")) %></h4>
+  			        <h4><%= link_to("動物森友會", animal_crossing_products_path(:order => "by_recent")) %></h4>
   			      </div>
   			    </div>
   			  </div>
@@ -148,28 +148,29 @@
 
     <section id="testimonials" class="sec-testimonials">
       <div class="container">
-        <h1>Employees said</h1>
+        <h1>各界好評</h1>
 
         <hr />
 
         <div class="row">
           <div class="col-sm-4">
-            <p class="text-center">"OW offer is such amazing. I got my dream work just one week!"</p>
+            <p class="text-center">"公仔專賣店"公仔種類眾多，價格公道！</p>
 
-            <p class="text-right">&mdash; Elizabeth</p>
+            <p class="text-right">&mdash; 阿明</p>
           </div>
 
           <div class="col-sm-4">
-            <p class="text-center">"Are you paid fairly? Big boss know your worth? Come here, you'll got them!"</p>
+            <p class="text-center">找不到當初沒買到的公仔嗎？來這裡就對了！</p>
 
-            <p class="text-right">&mdash; Milly Cooper</p>
+            <p class="text-right">&mdash; 小美</p>
           </div>
 
           <div class="col-sm-4">
-            <p class="text-center">"I have worked with several different people and it always seemed like a pain—luckily I found OW offer. Thanks them!"</p>
+            <p class="text-center">"買到好看的公仔又能得到虛擬寶物，cp值很高"</p>
 
-            <p class="text-right">&mdash; Jerry Lai</p>
+            <p class="text-right">&mdash; 冰淇淋</p>
           </div>
         </div>
       </div>
     </section>
+</div>
