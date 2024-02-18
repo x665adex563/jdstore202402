@@ -1,466 +1,466 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
- @import "bootstrap-sprockets";
- @import "bootstrap";
- @import "font-awesome";
- @import url(http://fonts.googleapis.com/css?family=Roboto);
-
-
- // 登入彈窗 格式
- // 登入彈窗 格式
- // 登入彈窗 格式
- .loginmodal-container {
-   padding: 30px;
-   max-width: 350px;
-   width: 100% !important;
-   background-color: #F7F7F7;
-   margin: 0 auto;
-   border-radius: 2px;
-   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-   overflow: hidden;
-   font-family: roboto;
- }
-
- .loginmodal-container h1 {
-   text-align: center;
-   font-size: 1.8em;
-   font-family: roboto;
- }
-
- .loginmodal-container input[type=submit] {
-   width: 100%;
-   display: block;
-   margin-bottom: 10px;
-   position: relative;
- }
-
- .loginmodal-container input[type=text], input[type=password] {
-   height: 44px;
-   font-size: 16px;
-   width: 100%;
-   margin-bottom: 10px;
-   -webkit-appearance: none;
-   background: #fff;
-   border: 1px solid #d9d9d9;
-   border-top: 1px solid #c0c0c0;
-   /* border-radius: 2px; */
-   padding: 0 8px;
-   box-sizing: border-box;
-   -moz-box-sizing: border-box;
- }
-
- .loginmodal-container input[type=text]:hover, input[type=password]:hover {
-  border: 1px solid #b9b9b9;
-  border-top: 1px solid #a0a0a0;
-  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-}
-
-.loginmodal {
-  text-align: center;
-  font-size: 14px;
-  font-family: 'Arial', sans-serif;
-  font-weight: 700;
-  height: 36px;
-  padding: 0 8px;
-/* border-radius: 3px; /
-/ -webkit-user-select: none;
-  user-select: none; /
-}
-
-.loginmodal-submit {
-  / border: 1px solid #3079ed; /
-  border: 0px;
-  color: #fff;
-  text-shadow: 0 1px rgba(0,0,0,0.1);
-  background-color: #4d90fe;
-  padding: 17px 0px;
-  font-family: roboto;
-  font-size: 14px;
-  / background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); /
-}
-
-.loginmodal-submit:hover {
-  / border: 1px solid #2f5bb7; /
-  border: 0px;
-  text-shadow: 0 1px rgba(0,0,0,0.3);
-  background-color: #357ae8;
-  / background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
-}
-
-.loginmodal-container a {
-  text-decoration: none;
-  color: #666;
-  font-weight: 400;
-  text-align: center;
-  display: inline-block;
-  opacity: 0.6;
-  transition: opacity ease 0.5s;
-}
-
-.login-help{
-  font-size: 12px;
-}
-
-
-
-// icon css
-// icon css
-// icon css
-
-//讓四個 社群圖標 直排
-  ul.social-network {
-    list-style: none;
-      display: inline;
-      margin-left:0 !important;
-      padding: 0;
-  }
-  //社群圖標 橫著排 和 之間的距離
-  ul.social-network li {
-      display: inline;
-      margin: 10px;
-  }
-  //滑鼠指著時 外圈 顏色
-  .social-network a.icoTwitter:hover {
-      background-color:#33ccff;
-  }
-  .social-network a.icoGithub:hover {
-      background-color:#757575;
-  }
-  .social-network a.icoGoogle:hover {
-      background-color:#BD3518;
-  }
-  .social-network a.icoFacebook:hover {
-      background-color:#3B5998;
-  }
-
-  //社群圖標 滑鼠指著的顏色
-  .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
-  .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
-      color:#fff;
-  }
-  //這個看不出功能
-  a.socialIcon:hover, .socialHoverClass {
-      color:#44BCDD;
-  }
-  //外圈 格式 (包含預設顏色/滑鼠指著時的大小)
-  .social-circle li a {
-      display:inline-block;
-      position:relative;
-      margin:0 auto 0 auto;
-      -moz-border-radius:50%;
-      -webkit-border-radius:50%;
-      border-radius:50%;
-      text-align:center;
-      width: 50px;
-      height: 50px;
-      font-size:20px;
-      background-color: #E0E0E0;
-  }
-  //社群圖標 格式 (高度)
-  .social-circle li i {
-      margin:0;
-      line-height:50px;
-      text-align: center;
-  }
-  //滑鼠指著時 外圈 旋轉角度/秒數
-  .social-circle li a:hover i, .triggeredHover {
-      -moz-transform: rotate(360deg);
-      -webkit-transform: rotate(360deg);
-      -ms--transform: rotate(360deg);
-      transform: rotate(360deg);
-      -webkit-transition: all 0.2s;
-      -moz-transition: all 0.2s;
-      -o-transition: all 0.2s;
-      -ms-transition: all 0.2s;
-      transition: all 0.3s;
-  }
-  // 外圈 顏色 滑鼠移開時 旋轉回來
-  .social-circle i {
-      color: #fff;
-      -webkit-transition: all 0.8s;
-      -moz-transition: all 0.8s;
-      -o-transition: all 0.8s;
-      -ms-transition: all 0.8s;
-      transition: all 0.8s;
-  }
-
-
-
-
-//調整youtube影片尺寸
-//調整youtube影片尺寸
-//調整youtube影片尺寸
-   // .flex-video {
-   //   position: relative;
-   //   padding-top: 25px;
-   //   padding-bottom: 67.5%;
-   //   height: 0;
-   //   margin-bottom: 16px;
-   //   overflow: hidden;
-   // }
-   //
-   // .flex-video.widescreen { padding-bottom: 57.25%; }
-   // .flex-video.vimeo { padding-top: 0; }
-   //
-   // .flex-video iframe,
-   // .flex-video object,
-   // .flex-video embed {
-   //   position: absolute;
-   //   top: 0;
-   //   left: 0;
-   //   width: 40%; //調整影片比例
-   //   height: 40%;
-   // }
-   // @media only screen and (max-device-width: 800px),
-   // only screen and (device-width: 1024px) and (device-height: 600px),
-   // only screen and (width: 1280px) and (orientation: landscape),
-   // only screen and (device-width: 800px),
-   // only screen and (max-width: 767px) {
-   //   .flex-video { padding-top: 0; }
-   // }
-
-
-//首頁排版
-//首頁排版
-//首頁排版
-//格式
-html {
-  font-size: 16px;
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  font-family: 'Open sans', sans-serif; //文字樣式選擇(包山包海)
-  font-weight: 300;
-  background-image: linear-gradient(#B0BEC5, #fff6e4);
-  margin-top: 80px;
-  margin-bottom: 150px;
-}
-
-
-.navbar {
-  margin-bottom: 0;
-}
-
-.navbar a, // a是超連結
-.sec-about p {
-  text-align: center; //文字置中 (center,left,right,justify(左右對齊),inherit,initial)
-}
-
-.navbar a {
-  font-size: 16px;
-}
-
-.navbar .fa-external-link {
-  font-size: 10px;
-}
-
-//navbar下拉式選單
-.dropdown-menu {
-	min-width: 210px;
-}
-
-.dropdown-menu li a {
-	padding: 5px 15px;
-	font-weight: 300;
-}
-
-.dropdown-menu li a:hover { //滑鼠指著時 文字顏色
-	color: darken(#B71C1C, 5%); //變暗,顏色,透明度
-}
-
-div.alert {
-  margin-top: 60px;
-  margin-bottom: 3px;
-  border-radius: 0;
-}
-
-.sec-main {
-  margin-top: -28px; //下方內容 跟頁首距離
-}
-
-.main-heading {
-  font-family: 'Open sans', sans-serif;
-  font-weight: 300; //字體粗細1~1000
-  text-align: center;
-  letter-spacing: 9px; //每個文字的間隔距離
-}
-
-.container > h1 {
-  font-weight: 300;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.sec-about a {
-  text-decoration: underline; //一條橫線
-}
-
-.sec-services h2,
-.sec-services p {
-  font-weight: 300;
-  text-align: center;
-}
-
-.sec-testimonials p {
-  font-style: italic; //斜體字 (normal,italic(文字斜體),oblique(文本傾斜))
-}
-
-.sec-contact .btn {
-  text-transform: uppercase;
-}
-
-.soc-media-ul a {
-  text-align: center;
-  text-decoration: none;
-}
-
-//標題
-.navbar-default {
-  background: #fff;
-}
-
-.navbar .fa-external-link {
-  vertical-align: top;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus {
-  color: #fff;
-}
-
-.navbar-inverse .navbar-nav>li>a:active {
-  color: darken(#fff, 5%);
-}
-
-//主要內容
-.sec-main {
-  position: relative;
-  height: 200px;
-  background: asset-data-url("首頁至頂大圖.jpeg") no-repeat center center;
-  background-size: cover; //圖片覆蓋整個區域
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.05); //前三調整顏色，第四個調整透明度
-  }
-}
-
-.main-heading {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  padding: 0;
-  margin: auto;
-  height: 40px;
-  color: #9E9E9E;
-}
-
-//關於"公仔專賣店"
-.sec-about a {
-  color: #000;
-  &:hover,
-  &:focus {
-    color: #000;
-  }
-}
-
-//功能
-.sec-services {
-  background: #f9f9f9;
-}
-
-.sec-services i {
-  display: block;
-  margin: auto;
-  width: 45px;
-}
-
-.sec-services .fa-paint-brush {
-  width: 64px;
-}
-
-.sec-services .fa-code {
-  width: 68px;
-}
-
-.sec-services h2 {
-  margin: 1em 0;
-}
-
-//分類
-.sec-testimonials {
-  background: #f9f9f9;
-}
-
-//各界好評
-.cards-row {
-  padding-top:40px;
-  padding-bottom:20px;
-  background:#eee;
-}
-.thumbnail {
-  padding:0;
-  border-radius:0;
-  border:none;
-  box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
-}
-.thumbnail>img {
-  height: 200px;
-
-  width:200px;
-  display:block;
-}
-.thumbnail h4 {
-  text-align: center;
-  margin: 0;
-  margin-left: -5px;
-  margin-right: -5px;
-  padding:8px 0;
-  border-top: solid 1px #eee;
-  transition: 1.5s;
-}
-
-.thumbnail h4 a:hover {
-  color: #B3E5FC;
-  text-decoration: none;
-}
-
-.thumbnail p {
-  padding-top:8px;
-  font-size:20px;
-}
-.thumbnail .btn {
-  border-radius:0;
-  box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
-  font-size:20px;
-}
+// /*
+//  * This is a manifest file that'll be compiled into application.css, which will include all the files
+//  * listed below.
+//  *
+//  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+//  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+//  *
+//  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+//  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+//  * files in this directory. Styles in this file should be added after the last require_* statement.
+//  * It is generally better to create a new file per style scope.
+//  *
+//  *= require_tree .
+//  *= require_self
+//  */
+//  @import "bootstrap-sprockets";
+//  @import "bootstrap";
+//  @import "font-awesome";
+//  @import url(http://fonts.googleapis.com/css?family=Roboto);
+//
+//
+//  // 登入彈窗 格式
+//  // 登入彈窗 格式
+//  // 登入彈窗 格式
+//  .loginmodal-container {
+//    padding: 30px;
+//    max-width: 350px;
+//    width: 100% !important;
+//    background-color: #F7F7F7;
+//    margin: 0 auto;
+//    border-radius: 2px;
+//    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+//    overflow: hidden;
+//    font-family: roboto;
+//  }
+//
+//  .loginmodal-container h1 {
+//    text-align: center;
+//    font-size: 1.8em;
+//    font-family: roboto;
+//  }
+//
+//  .loginmodal-container input[type=submit] {
+//    width: 100%;
+//    display: block;
+//    margin-bottom: 10px;
+//    position: relative;
+//  }
+//
+//  .loginmodal-container input[type=text], input[type=password] {
+//    height: 44px;
+//    font-size: 16px;
+//    width: 100%;
+//    margin-bottom: 10px;
+//    -webkit-appearance: none;
+//    background: #fff;
+//    border: 1px solid #d9d9d9;
+//    border-top: 1px solid #c0c0c0;
+//    /* border-radius: 2px; */
+//    padding: 0 8px;
+//    box-sizing: border-box;
+//    -moz-box-sizing: border-box;
+//  }
+//
+//  .loginmodal-container input[type=text]:hover, input[type=password]:hover {
+//   border: 1px solid #b9b9b9;
+//   border-top: 1px solid #a0a0a0;
+//   -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+//   -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+//   box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+// }
+//
+// .loginmodal {
+//   text-align: center;
+//   font-size: 14px;
+//   font-family: 'Arial', sans-serif;
+//   font-weight: 700;
+//   height: 36px;
+//   padding: 0 8px;
+// /* border-radius: 3px; /
+// / -webkit-user-select: none;
+//   user-select: none; /
+// }
+//
+// .loginmodal-submit {
+//   / border: 1px solid #3079ed; /
+//   border: 0px;
+//   color: #fff;
+//   text-shadow: 0 1px rgba(0,0,0,0.1);
+//   background-color: #4d90fe;
+//   padding: 17px 0px;
+//   font-family: roboto;
+//   font-size: 14px;
+//   / background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); /
+// }
+//
+// .loginmodal-submit:hover {
+//   / border: 1px solid #2f5bb7; /
+//   border: 0px;
+//   text-shadow: 0 1px rgba(0,0,0,0.3);
+//   background-color: #357ae8;
+//   / background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+// }
+//
+// .loginmodal-container a {
+//   text-decoration: none;
+//   color: #666;
+//   font-weight: 400;
+//   text-align: center;
+//   display: inline-block;
+//   opacity: 0.6;
+//   transition: opacity ease 0.5s;
+// }
+//
+// .login-help{
+//   font-size: 12px;
+// }
+//
+//
+//
+// // icon css
+// // icon css
+// // icon css
+//
+// //讓四個 社群圖標 直排
+//   ul.social-network {
+//     list-style: none;
+//       display: inline;
+//       margin-left:0 !important;
+//       padding: 0;
+//   }
+//   //社群圖標 橫著排 和 之間的距離
+//   ul.social-network li {
+//       display: inline;
+//       margin: 10px;
+//   }
+//   //滑鼠指著時 外圈 顏色
+//   .social-network a.icoTwitter:hover {
+//       background-color:#33ccff;
+//   }
+//   .social-network a.icoGithub:hover {
+//       background-color:#757575;
+//   }
+//   .social-network a.icoGoogle:hover {
+//       background-color:#BD3518;
+//   }
+//   .social-network a.icoFacebook:hover {
+//       background-color:#3B5998;
+//   }
+//
+//   //社群圖標 滑鼠指著的顏色
+//   .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+//   .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+//       color:#fff;
+//   }
+//   //這個看不出功能
+//   a.socialIcon:hover, .socialHoverClass {
+//       color:#44BCDD;
+//   }
+//   //外圈 格式 (包含預設顏色/滑鼠指著時的大小)
+//   .social-circle li a {
+//       display:inline-block;
+//       position:relative;
+//       margin:0 auto 0 auto;
+//       -moz-border-radius:50%;
+//       -webkit-border-radius:50%;
+//       border-radius:50%;
+//       text-align:center;
+//       width: 50px;
+//       height: 50px;
+//       font-size:20px;
+//       background-color: #E0E0E0;
+//   }
+//   //社群圖標 格式 (高度)
+//   .social-circle li i {
+//       margin:0;
+//       line-height:50px;
+//       text-align: center;
+//   }
+//   //滑鼠指著時 外圈 旋轉角度/秒數
+//   .social-circle li a:hover i, .triggeredHover {
+//       -moz-transform: rotate(360deg);
+//       -webkit-transform: rotate(360deg);
+//       -ms--transform: rotate(360deg);
+//       transform: rotate(360deg);
+//       -webkit-transition: all 0.2s;
+//       -moz-transition: all 0.2s;
+//       -o-transition: all 0.2s;
+//       -ms-transition: all 0.2s;
+//       transition: all 0.3s;
+//   }
+//   // 外圈 顏色 滑鼠移開時 旋轉回來
+//   .social-circle i {
+//       color: #fff;
+//       -webkit-transition: all 0.8s;
+//       -moz-transition: all 0.8s;
+//       -o-transition: all 0.8s;
+//       -ms-transition: all 0.8s;
+//       transition: all 0.8s;
+//   }
+//
+//
+//
+//
+// //調整youtube影片尺寸
+// //調整youtube影片尺寸
+// //調整youtube影片尺寸
+//    // .flex-video {
+//    //   position: relative;
+//    //   padding-top: 25px;
+//    //   padding-bottom: 67.5%;
+//    //   height: 0;
+//    //   margin-bottom: 16px;
+//    //   overflow: hidden;
+//    // }
+//    //
+//    // .flex-video.widescreen { padding-bottom: 57.25%; }
+//    // .flex-video.vimeo { padding-top: 0; }
+//    //
+//    // .flex-video iframe,
+//    // .flex-video object,
+//    // .flex-video embed {
+//    //   position: absolute;
+//    //   top: 0;
+//    //   left: 0;
+//    //   width: 40%; //調整影片比例
+//    //   height: 40%;
+//    // }
+//    // @media only screen and (max-device-width: 800px),
+//    // only screen and (device-width: 1024px) and (device-height: 600px),
+//    // only screen and (width: 1280px) and (orientation: landscape),
+//    // only screen and (device-width: 800px),
+//    // only screen and (max-width: 767px) {
+//    //   .flex-video { padding-top: 0; }
+//    // }
+//
+//
+// //首頁排版
+// //首頁排版
+// //首頁排版
+// //格式
+// html {
+//   font-size: 16px;
+//   position: relative;
+//   min-height: 100%;
+// }
+//
+// body {
+//   font-family: 'Open sans', sans-serif; //文字樣式選擇(包山包海)
+//   font-weight: 300;
+//   background-image: linear-gradient(#B0BEC5, #fff6e4);
+//   margin-top: 80px;
+//   margin-bottom: 150px;
+// }
+//
+//
+// .navbar {
+//   margin-bottom: 0;
+// }
+//
+// .navbar a, // a是超連結
+// .sec-about p {
+//   text-align: center; //文字置中 (center,left,right,justify(左右對齊),inherit,initial)
+// }
+//
+// .navbar a {
+//   font-size: 16px;
+// }
+//
+// .navbar .fa-external-link {
+//   font-size: 10px;
+// }
+//
+// //navbar下拉式選單
+// .dropdown-menu {
+// 	min-width: 210px;
+// }
+//
+// .dropdown-menu li a {
+// 	padding: 5px 15px;
+// 	font-weight: 300;
+// }
+//
+// .dropdown-menu li a:hover { //滑鼠指著時 文字顏色
+// 	color: darken(#B71C1C, 5%); //變暗,顏色,透明度
+// }
+//
+// div.alert {
+//   margin-top: 60px;
+//   margin-bottom: 3px;
+//   border-radius: 0;
+// }
+//
+// .sec-main {
+//   margin-top: -28px; //下方內容 跟頁首距離
+// }
+//
+// .main-heading {
+//   font-family: 'Open sans', sans-serif;
+//   font-weight: 300; //字體粗細1~1000
+//   text-align: center;
+//   letter-spacing: 9px; //每個文字的間隔距離
+// }
+//
+// .container > h1 {
+//   font-weight: 300;
+//   text-align: center;
+//   text-transform: uppercase;
+// }
+//
+// p {
+//   font-size: 16px;
+//   line-height: 1.5;
+// }
+//
+// .sec-about a {
+//   text-decoration: underline; //一條橫線
+// }
+//
+// .sec-services h2,
+// .sec-services p {
+//   font-weight: 300;
+//   text-align: center;
+// }
+//
+// .sec-testimonials p {
+//   font-style: italic; //斜體字 (normal,italic(文字斜體),oblique(文本傾斜))
+// }
+//
+// .sec-contact .btn {
+//   text-transform: uppercase;
+// }
+//
+// .soc-media-ul a {
+//   text-align: center;
+//   text-decoration: none;
+// }
+//
+// //標題
+// .navbar-default {
+//   background: #fff;
+// }
+//
+// .navbar .fa-external-link {
+//   vertical-align: top;
+// }
+//
+// .navbar-inverse .navbar-nav>li>a:hover,
+// .navbar-inverse .navbar-nav>li>a:focus {
+//   color: #fff;
+// }
+//
+// .navbar-inverse .navbar-nav>li>a:active {
+//   color: darken(#fff, 5%);
+// }
+//
+// //主要內容
+// .sec-main {
+//   position: relative;
+//   height: 200px;
+//   background: asset-data-url("首頁至頂大圖.jpeg") no-repeat center center;
+//   background-size: cover; //圖片覆蓋整個區域
+//
+//   &:after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: rgba(0, 0, 0, 0.05); //前三調整顏色，第四個調整透明度
+//   }
+// }
+//
+// .main-heading {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   z-index: 2;
+//   padding: 0;
+//   margin: auto;
+//   height: 40px;
+//   color: #9E9E9E;
+// }
+//
+// //關於"公仔專賣店"
+// .sec-about a {
+//   color: #000;
+//   &:hover,
+//   &:focus {
+//     color: #000;
+//   }
+// }
+//
+// //功能
+// .sec-services {
+//   background: #f9f9f9;
+// }
+//
+// .sec-services i {
+//   display: block;
+//   margin: auto;
+//   width: 45px;
+// }
+//
+// .sec-services .fa-paint-brush {
+//   width: 64px;
+// }
+//
+// .sec-services .fa-code {
+//   width: 68px;
+// }
+//
+// .sec-services h2 {
+//   margin: 1em 0;
+// }
+//
+// //分類
+// .sec-testimonials {
+//   background: #f9f9f9;
+// }
+//
+// //各界好評
+// .cards-row {
+//   padding-top:40px;
+//   padding-bottom:20px;
+//   background:#eee;
+// }
+// .thumbnail {
+//   padding:0;
+//   border-radius:0;
+//   border:none;
+//   box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+// }
+// .thumbnail>img {
+//   height: 200px;
+//
+//   width:200px;
+//   display:block;
+// }
+// .thumbnail h4 {
+//   text-align: center;
+//   margin: 0;
+//   margin-left: -5px;
+//   margin-right: -5px;
+//   padding:8px 0;
+//   border-top: solid 1px #eee;
+//   transition: 1.5s;
+// }
+//
+// .thumbnail h4 a:hover {
+//   color: #B3E5FC;
+//   text-decoration: none;
+// }
+//
+// .thumbnail p {
+//   padding-top:8px;
+//   font-size:20px;
+// }
+// .thumbnail .btn {
+//   border-radius:0;
+//   box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+//   font-size:20px;
+// }
